@@ -2,18 +2,24 @@
   "name": "pf-create",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
-  "main": "index.js",
+  "description": "CLI tool for creating React components with templates",
+  "main": "dist/index.js",
+  "bin": {
+    "pf-create": "dist/index.js"
+  },
   "scripts": {
+    "dev": "tsup --watch",
     "build": "tsup",
-    "start": "node dist/index.js",
-    "dev": "tsup -d dist --watch"
+    "lint": "eslint",
+    "format": "prettier --write .",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "citty": "^0.1.6",
+    "consola": "^3.2.3",
     "tsup": "^8.0.2"
   },
   "devDependencies": {
