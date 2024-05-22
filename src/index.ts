@@ -13,7 +13,7 @@ import {
 } from "./constants.js";
 
 consola.log({
-  message: logo,
+  message: "\n" + logo,
 });
 
 const config: Config = defaultConfig;
