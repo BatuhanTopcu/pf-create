@@ -18,4 +18,6 @@ export type SelectedFilesOpts = Array<{
   value: FileType;
 }>;
 
-export type CreaterFunction = (config: Config) => Promise<void>;
+export interface WithConfig {
+  config: Config;
+}
