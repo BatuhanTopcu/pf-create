@@ -1,6 +1,6 @@
 {
   "name": "pf-create",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "Opininated CLI tool for creating React components with templates",
   "main": "dist/index.js",

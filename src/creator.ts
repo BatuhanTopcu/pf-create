@@ -25,14 +25,14 @@ export class Creator implements WithConfig {
 
   constructor(config: Config) {
     this.config = config;
-    this.path = this.getPath();
     this.isClient = this.config.componentType === "client";
     this.name = this.config.componentName;
+    this.path = this.createPath();
   }
 
-  private getPath = () => {
+  private createPath = () => {
     const directory = process.cwd();
-    return `${directory}/${this.name}`;
+    return `${directory}/${this.config.componentName}`;
   };
 
   private check(file: FileType) {
